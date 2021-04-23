@@ -15,14 +15,7 @@ const App = () => {
             <Route path='/' component={HomeScreen} exact />
             <Route path='/product/:id' component={ProductScreen} />
             {/* doubt    path='/product/:id' 
-            
-            server.js
-            "proxy": "http://127.0.0.1:5000",
-
-            "proxy": "http://192.168.42.172:5000",
-
-             "proxy": "http://localhost:5000",
-
+          
             */}
          </Container>
       </main>

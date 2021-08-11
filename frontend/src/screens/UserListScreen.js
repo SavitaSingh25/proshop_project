@@ -33,7 +33,6 @@ const UserListScreen = ({ history }) => {
             dispatch(deleteUser(id))
         }
     }
-console.log('users',users )
     return (
         <>
             <h1>Users</h1>

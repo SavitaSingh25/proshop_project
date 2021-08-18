@@ -23,20 +23,16 @@ const productSchema = mongoose.Schema(
             required: true
         },
         image: {
-            type: String,
-            required: true
+            type: String
         },
         brand: {
-            type: String,
-            required: true
+            type: String
         },
         category: {
-            type: String,
-            required: true
+            type: String
         },
         description: {
-            type: String,
-            required: true
+            type: String
         },
         reviews: [reviewScema],
         rating: {
@@ -46,17 +42,14 @@ const productSchema = mongoose.Schema(
         },
         numReviews: {
             type: Number,
-            required: true,
             default: 0
         },
         price: {
             type: Number,
-            required: true,
             default: 0
         },
         countInStock: {
             type: Number,
-            required: true,
             default: 0
         },
     }, 

@@ -50,13 +50,14 @@ const createProduct = asyncHandler(async(req, res) => {
         user: req.user._id,
         image: '/image/sample.jpg',
         brand: 'Sample brand',
-        category: 0,
+        category: 'Sample category',
+        countInStock: 0,
         numReviews: 0,
         description: 'Sample description'
     })
 
     const createdProduct = await product.save()
-    res.status(201).json(product)
+    res.status(201).json(createProduct)
 })
 
 // @decs Update a Product
@@ -77,10 +78,10 @@ const updateProduct = asyncHandler(async(req, res) => {
         product.countInStock = countInStock
    
         const updatedProduct = await product.save()
-        res.status(404).json(updatedProduct)
+        res.json(updatedProduct)
     } else{
         res.status(404)
-        throw new Error('User not found')
+        throw new Error('Product not found')
     }  
 })
 

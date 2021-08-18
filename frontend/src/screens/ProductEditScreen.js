@@ -56,8 +56,8 @@ const ProductEditScreen = ({ match, history }) => {
             image,
             brand,
             category,
-            description,
-            countInStock
+            countInStock,
+            description
            })
         )
     }
@@ -88,7 +88,7 @@ const ProductEditScreen = ({ match, history }) => {
                 </Form.Group>
 
                 <Form.Group controlId='price'>
-                    <Form.Label>Email Price</Form.Label>
+                    <Form.Label>Price</Form.Label>
                     <Form.Control
                         type='number'
                         placeholder='Enter price'
